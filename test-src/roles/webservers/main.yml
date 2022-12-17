@@ -1,0 +1,13 @@
+yum:
+  name: 
+    - httpd
+    - php
+  state: latest
+
+file:
+  path: /var/www/html/test.php
+  state: touch
+
+copy:
+  src: /var/www/html/test.php
+  dest: /

@@ -1,0 +1,14 @@
+---
+  - name: getapache
+    hosts: linux,database
+    become: yes
+    become_method: sudo
+    become_user: root
+
+    tasks:
+      - name: remove apache and php
+        apt:
+          name: 
+          - apache2
+          - php5-cli
+          state: absent

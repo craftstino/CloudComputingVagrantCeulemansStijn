@@ -1,0 +1,22 @@
+---
+  - name: webrole
+    hosts: linux
+    become: yes
+    become_method: sudo
+    become_user: root
+    tasks:
+      - name: stijncweb role
+        include_role:
+          name: stijncweb
+
+
+
+  - name: databaserole
+    hosts: database
+    become: yes
+    become_method: sudo
+    become_user: root
+    tasks:
+      - name: stijncdatabase role
+        include_role:
+          name: stijncdatabase

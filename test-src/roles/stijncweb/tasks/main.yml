@@ -1,0 +1,11 @@
+- name: install php en httpd
+  apt:
+    name: 
+      - apache2
+    state: latest
+
+- name: file copy naar root
+  become: true
+  copy:
+    src: /testing/test.php
+    dest: /

@@ -1,0 +1,12 @@
+- name: database
+  apt:
+    name: 
+      - mysql-server
+    state: latest
+
+
+- name: start database
+  service: 
+    name: mysql
+    enabled: true
+    state: started
