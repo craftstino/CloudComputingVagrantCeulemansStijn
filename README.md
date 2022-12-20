@@ -4,7 +4,7 @@ This is the lab assingment 2 vagrant and ansible
 
 Video Timestamps
 
-OO:OO vagrant up
+00:00 vagrant up
 
 06:50 vagrant ssh ansible
 
@@ -28,7 +28,7 @@ OO:OO vagrant up
 
 12:38 used some command to create a user for all the machine connecting to the database and allow mysql on the firewall (I am not sure if i needed to make a user this way maby i could have used the default user that is created when installing mysql or i could have maby dont this in the ansible roles but i got errors so i did it this way. This is kinde the same for the firewall i am not sure if it was needed but just did it to be sure. )
 
-14:OO ssh in other machine to show the test.php file in the root
+14:00 ssh in other machine to show the test.php file in the root
 
 14:20 went to the /var/www/html directory where the php files where located to create a database and connect to it
 
