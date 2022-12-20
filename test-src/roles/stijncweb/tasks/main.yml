@@ -1,7 +1,10 @@
-- name: install php en httpd
+- name: install php en apache
   apt:
     name: 
       - apache2
+      - php5-mysql
+      - php5-cli
+      - libapache2-mod-php5
     state: latest
 
 - name: file copy naar root
@@ -9,3 +12,36 @@
   copy:
     src: /testing/test.php
     dest: /
+
+- name: file copy naar /var/www/html
+  become: true
+  copy:
+    src: /testing/test.php
+    dest: /var/www/html
+
+
+- name: file copy naar /var/www/html
+  become: true
+  copy:
+    src: /testing/connect.php
+    dest: /var/www/html
+
+
+- name: file copy naar /var/www/html
+  become: true
+  copy:
+    src: /testing/list.php
+    dest: /var/www/html
+
+
+- name: file copy naar /var/www/html
+  become: true
+  copy:
+    src: /testing/createtable.php
+    dest: /var/www/html
+
+- name: file copy naar /var/www/html
+  become: true
+  copy:
+    src: /testing/addremove.php
+    dest: /var/www/html

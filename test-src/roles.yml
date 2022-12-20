@@ -4,10 +4,10 @@
     become: yes
     become_method: sudo
     become_user: root
+    roles:
+      - stijncweb
     tasks:
-      - name: stijncweb role
-        include_role:
-          name: stijncweb
+
 
 
 
@@ -16,7 +16,6 @@
     become: yes
     become_method: sudo
     become_user: root
+    roles:
+      - stijncdatabase
     tasks:
-      - name: stijncdatabase role
-        include_role:
-          name: stijncdatabase

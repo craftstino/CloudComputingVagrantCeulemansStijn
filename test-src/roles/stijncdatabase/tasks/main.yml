@@ -2,11 +2,17 @@
   apt:
     name: 
       - mysql-server
+      - python3
     state: latest
 
+- name: file copy naar /etc/mysql/my.cnf
+  copy:
+    src: /testing/my.cnf
+    dest: /etc/mysql/my.cnf
 
 - name: start database
   service: 
     name: mysql
     enabled: true
     state: started
+

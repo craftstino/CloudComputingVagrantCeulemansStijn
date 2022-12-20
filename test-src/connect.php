@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('10.10.1.4', 'root', 'test', '');
+$conn = new mysqli('10.10.1.4', 'root', 'test', 'CloudComputing');
 
 if ($conn->connect_errno) {
 
