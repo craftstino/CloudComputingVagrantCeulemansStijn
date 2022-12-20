@@ -1,5 +1,6 @@
 # CloudComputingVagrantCeulemansStijn
 
+Stijn Ceulemans r0783874
 This is the lab assingment 2 vagrant and ansible 
 
 Video Timestamps
